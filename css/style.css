@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap'); /* Buscando famílias de fontes */
+
+/* CSS RESET : define as configurações iniciais*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    color: rgb(255, 136, 0);
+}
+
+header{
+      
+    background-color: #1E1C21;/* Define a cor do cabeçalho */
+    height: 200px; /* Define a altura do cabeçalho */
+    padding-top: 20px; /* Define o espaçamento superior do cabeçalho */
+}
+
+.container-grid{
+width: 1200px ; /* Define a largura dos elementos do cabeçalho em relação as bordas do computador */
+margin: 0 auto; /* Define a margem dos elementos do cabeçalho */
+}
+
+.cabecalho{
+    display: flex ; /* Define a largura dos elementos do cabeçalho */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; /* Transforma as letras maiusculas em minusculas */
+}
+
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+}
+
+.icone-menu{
+    height: 40px;
+}
+
+#barras{
+    display: none;
+}
+
+
+
+.banner{
+    height: 602px; /* Altura do banner */
+    background-repeat: no-repeat /* Não fica repetindo a imagem do banner várias vezes */;
+    background-position: center  /* Centraliza o banner*/ ;
+    background-size: cover /* Cobrir todo o fundo do banner */;
+}
+
+.banner-f1{
+    background-image: url(../img/bannerf1.png);
+}
+
+.banner-cs{
+    background-image: url(../img/lol_banner.png);
+}
+
+.banner-lol{
+    background-image: url(../img/cs_banner.png);
+}
+
+
+
+.conteudo-banner h1 /* Mexe no título "E-players" */{
+    color: white;
+    font-family: "Titillium Web";
+    font-size: 80px;
+}
+
+.conteudo-banner p /* Mexe no parágrafo " O maior portal de campeonatos online "*/{
+    color: white;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.conteudo-banner a /* Mexe no botão " Inscreva-se "*/{
+    padding: 15px;
+    background-color: #c31616;
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none; /* Retira a linha embaixo de "Inscreva-se" */
+    text-transform: uppercase; /* Tranforma as letras minusculas em maiusculas */
+    font-size: 25px;
+    border-radius: 5px;                /* Vai arredondar as bordas do botão "Inscreva-se" */
+}
+
+.conteudo-banner{
+    width: 497px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posicionamento-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.jogos{
+    background-color: black;
+    height: 120px;
+}
+
+.posicionamento-jogos{
+    height: 100%;
+}
+
+.container{
+  max-width: 1200 px;
+}
+
+@media screen and (max-widht: 1200px) {
+    .container-grid{
+        width: 1000px;
+    }
+}   /* Serve para mexer na "responsividade" do site, isto é, fazer com que a tela se adapte ao tamanho do dispostitivo que irá acessar ao conteúdo*/
+
+@media screen and (max-widht: 1000px) {
+    #barras{
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        top: 91px;
+        right: 0px;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #1E1C21;
+        height: 400px;
+    }
+
+    .menu-ativo{
+        display: flex;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+
+    .container-grid{
+        width: 800px;
+    }
+}
